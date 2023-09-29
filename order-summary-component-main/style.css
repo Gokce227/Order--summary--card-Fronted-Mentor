@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Fraunces:wght@100;700&family=Inter:wght@400;700&family=Karla:wght@400;700&family=Kumbh+Sans:wght@400;700&family=Lexend+Deca&family=Montserrat:wght@100&family=Mulish:wght@400;600;700;900&family=Outfit:wght@300;400;600&family=Poppins:wght@500&family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+
+*{
+     margin: 0;
+     padding: 0;
+     list-style: none;
+     border: none;
+     box-sizing: border-box; 
+     font-family: 'Red Hat Display', sans-serif;
+}
+
+body{
+     height: 100vh;
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+     -webkit-box-orient: vertical;
+     -webkit-box-direction: normal;
+     flex-direction: column;
+     -ms-flex-direction: column;
+     -webkit-box-pack: center;
+     -ms-flex-pack: center;
+     justify-content: center;
+     -webkit-box-align: center;
+     -ms-flex-align: center;
+     align-items: center;
+     text-align: center;
+     background-image: url(images/pattern-background-desktop.svg);
+     background-repeat: no-repeat;
+     background-size: contain;
+     background-color: hsl(225, 100%, 94%);
+}
+
+.component{
+     display: flex;
+     flex-direction: column;
+     background: #fefefe;
+     border-radius: 20px;
+     overflow: hidden;
+     position: relative;
+     max-width: 450px;
+     margin-left: 1.5em;
+     margin-right: 1.5em;
+     margin-bottom: 40px;
+     box-shadow: 0 15px 25px 0 hsla(245, 75%, 52%, .11);
+}
+
+
+.component-header img{
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+}
+
+.component-body{
+     text-align: center;
+     margin: 20px;
+}
+
+.component-text h2{
+     font-size: 28px;
+     font-weight: 900;
+     color:hsl(223, 47%, 23%);
+     padding: 1.3em 0 .8em 0; 
+}
+
+.component-text p{
+     line-height: 1.6;
+     font-size: .95rem;
+     padding: 0 13% 2.1em;
+     color: hsl(224, 23%, 55%);
+}
+
+.component-body .plan{
+     background:hsl(225, 100%, 98%);
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin: 0 1.5em 1.5em 1.5em;
+     padding: 1em;
+     border-radius: 10px;
+     position: relative;
+}
+
+.component-body .plan img{
+     position:absolute;
+     left:  20px;
+}
+.component-body .plan-text{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     padding-left: 70px;
+     gap: .2em;
+     text-align: left;
+}
+
+
+.component-body .plan-text h2{
+     font-size: 1rem;
+     font-weight: 900;
+     color:hsl(223, 47%, 23%);
+}
+
+.component-body .plan-text p{
+ color: hsl(224, 23%, 55%)
+}
+
+.component-body  .plan a{
+     color: hsl(245, 75%, 52%);
+     font-weight: 700;
+     font-size: 1rem;
+     opacity: 1;
+     transition: all .2s ease;
+     text-decoration: underline;
+}
+
+.component-footer{
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+     gap: .65em;
+     margin-bottom: 1.5em;
+}
+
+
+.component-footer a{
+  text-decoration: none;
+  display: block;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: .95rem;
+  font-weight: 700;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  padding: 1em;
+}
+.component-footer  .payment-btn{
+     background:hsl(245, 75%, 52%);
+     color: #fefefe;
+     box-shadow: 0 15px 20px 0 hsla(245, 75%, 52%, .25);
+     opacity: 1;
+     transition: all .2s ease;
+}
+
+.component-footer .cancel-btn{
+     color: hsl(224, 23%, 55%);
+     font-size: bold;
+     transition: all .2s ease;
+}
+
+.payment-btn:hover {
+     opacity: .8;
+   }
+   
+.cancel-btn:hover{
+    color:  hsl(223, 47%, 23%);
+}
+
+.component-body  a:hover{
+     opacity: .8;
+     text-decoration: none;
+}
+
+.component-footer{
+     margin:0 20px 20px 20px;
+}
+@media (max-width: 450px) {
+
+  body {
+     background: url(images/pattern-background-mobile.svg), hsl(225, 100%, 94%);
+     background-repeat: no-repeat;
+     background-size: contain;
+   }
+
+   .component{
+     max-width: 87%;
+   }
+   .component-text h2{
+     font-size: 23px;
+   }
+
+.component-body .plan{
+     margin: none;
+}
+   .component-body .plan-text{
+     padding-right: 10px;
+     padding-left: 60px;
+     display: flex;
+   }
+
+   .component-body .plan-text h2{
+     font-size: 13px;
+   }
+
+
+}
+   
+ 
+
+
